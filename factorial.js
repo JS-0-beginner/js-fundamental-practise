@@ -64,6 +64,7 @@ console.log(fact);
 */
 
 // factorial with decrement while loop in function
+
 /*
 function factorial(number)
 {
@@ -84,7 +85,7 @@ console.log(fact);
 */
 
 // factorial with decrement for loop in function
-
+/*
 function factorial(number)
 {
     let fact = 1;
@@ -98,3 +99,20 @@ function factorial(number)
 
 var fact = factorial(8);
 console.log(fact);
+*/
+
+// factorial in recursive function
+
+// factorial formula 
+// n! = n * (n-1)
+
+function factorial(n)
+{
+    if(n==1)
+    {
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+ const fact = factorial(5);
+ console.log(fact);
